@@ -1,69 +1,207 @@
+/* Base style for the body */
 body {
     font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5; /* Light background color */
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+
+/* Navbar styles */
+.navbar {
+    background-color: #333; /* Dark background */
+    padding: 15px; /* Padding for spacing */
+    color: #fff; /* White text color */
 }
-.container img{
-    width: 200px;
+
+.navbar .container {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Align vertically */
 }
+
+.navbar-logo {
+    font-size: 1.5em; /* Large font for logo */
+    font-weight: bold; /* Bold text */
+    color: #fff; /* White text color */
+    text-decoration: none; /* No underline */
+}
+
+.navbar-menu {
+    list-style-type: none; /* No bullet points */
+    display: flex; /* Horizontal layout */
+    margin: 0; /* No margin */
+    padding: 0; /* No padding */
+}
+
+.navbar-menu li {
+    margin-left: 20px; /* Space between menu items */
+}
+
+.navbar-menu a {
+    text-decoration: none; /* No underline */
+    color: #fff; /* White text color */
+    transition: color 0.3s; /* Smooth transition */
+}
+
+.navbar-menu a:hover {
+    color: #f0f0f0; /* Lighter color on hover */
+}
+
+/* Header styles */
 header {
-    background-color: #ffffff;
-    color: #000000;
-    padding: 40px 0;
-    text-align: center;
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+    padding: 40px 0; /* Padding for spacing */
+    text-align: center; /* Centered text */
 }
 
 header h1 {
-    margin: 0;
-    font-size: 3em;
+    font-size: 3em; /* Large font size */
+    margin: 0; /* No margin */
 }
 
 .subtitle {
-    font-size: 1.5em;
-    margin-top: 10px;
+    font-size: 1.5em; /* Large subtitle */
+    margin-top: 10px; /* Top margin */
 }
 
+/* Container for consistent layout */
+.container {
+    max-width: 800px; /* Maximum width */
+    margin: 0 auto; /* Centered */
+    padding: 20px; /* Padding */
+}
+
+.container img {
+    width: 200px; /* Fixed width for images */
+}
+
+/* Main content styles */
 .main-content {
-    padding: 40px 0;
-    text-align: center;
-    font-size: 25px;
+    padding: 40px 0; /* Padding for spacing */
+    text-align: center; /* Centered text */
+    font-size: 25px; /* Larger font size */
 }
 
+.services {
+    background-color: #e0e0e0; /* Light gray background for contrast */
+    padding: 40px 0; /* Padding top and bottom */
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2em; /* Larger font for headings */
+    margin: 0;
+    color: #202022; /* Dark gray for text */
+}
+
+/* Card styling for the services section */
+.cards {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap */
+    justify-content: center; /* Center the cards */
+    gap: 20px; /* Space between cards */
+}
+
+.card {
+    background-color: #ffffff; /* White card background */
+    border: 1px solid #878787; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    flex: 0 1 300px; /* Minimum width of 300px, adjustable */
+    padding: 20px; /* Padding within the card */
+    text-align: left; /* Align text to the left */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.card h3 {
+    font-size: 1.5em; /* Larger font for card titles */
+    margin: 0 0 10px 0; /* Space below the heading */
+    color: #000000; /* Teal for card titles */
+}
+
+.card p {
+    font-size: 1em; /* Standard font size for text */
+    line-height: 1.5; /* Increased line height for readability */
+    color: #202022; /* Dark gray for text */
+}
+
+/* Hover effects for interactivity */
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Increase shadow */
+}
+
+/* Service content list styles */
+.service-content ul {
+    list-style-type: disc; /* Disc bullets */
+    padding-left: 40px; /* Indent for list */
+}
+
+/* Contact section styles */
 .contact {
-    background-color: #87bfe4;
-    padding: 40px 0;
+    background-color: #cacaca; /* Gray background */
+    padding: 40px 0; /* Padding for spacing */
 }
 
 .contact h2 {
-    margin-top: 0;
+    text-align: center; /* Centered heading */
+    margin-top: 0; /* No top margin */
+}
+
+.contact ul {
+    list-style-type: none; /* No bullet points */
+    padding: 0; /* No padding */
+    text-align: center; /* Centered layout */
+}
+
+.contact ul li {
+    font-size: 1.1em; /* Slightly larger font */
+    line-height: 1.6; /* Line spacing */
+    margin-bottom: 15px; /* Space between list items */
+}
+
+.contact ul li a {
+    color: #003853; /* Darker link color */
+    text-decoration: none; /* No underline */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.contact ul li a:hover {
+    color: #6795ea; /* Lighter color on hover */
+}
+
+/* Container class for consistent layout */
+
+.main-content {
+    padding: 60px 20px; /* Extra padding for breathing room */
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0); /* Gradient background */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.container {
+    max-width: 1200px; /* Increased max-width for modern screens */
+    margin: 0 auto;
     text-align: center;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
+h2 {
+    font-size: 2.5em; /* Larger font size */
+    color: #333; /* Darker color for headings */
+    text-transform: uppercase; /* Uppercase text for emphasis */
+    margin-bottom: 20px; /* Extra space below heading */
 }
 
-ul li {
-    margin-bottom: 15px;
-    font-size: 1.1em;
-    line-height: 1.6;
+p {
+    font-size: 1.1em; /* Slightly larger font size */
+    line-height: 1.7; /* Increased line height for readability */
+    color: #555; /* A subtle dark shade for text */
+    text-align: justify; /* Justify text for a neat look */
+    padding: 0 20px; /* Extra padding for content spacing */
 }
 
-ul li a {
-    color: #007bff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-ul li a:hover {
-    color: #0056b3;
+.highlight {
+    font-weight: bold; /* Bold text for emphasis */
+    color: #0066cc; /* Custom color for highlights */
 }
