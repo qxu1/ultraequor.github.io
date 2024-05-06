@@ -206,125 +206,75 @@ header .subtitle {
 
 /* Contact Section Styles */
 /* Form Container */
-.form-container {
-    background-color: #f7f7f7; /* Light background for contrast */
-    border: 1px solid #e0e0e0; /* Soft gray border */
-    border-radius: 12px; /* Rounded corners */
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    padding: 30px; /* Generous padding */
-    margin: 30px auto; /* Center the form */
-    max-width: 600px; /* Maximum width for form */
+.contact-form {
+    background-color: #f7f7f7; /* Light background */
+    border: 1px solid #e5e7eb; /* Soft gray border */
+    border-radius: 6px; /* Rounded corners */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 30px; /* Padding */
+    max-width: 40rem; /* Maximum width */
+    margin: 30px auto; /* Centered */
+}
+
+/* Form Group Container */
+.form-group-container {
+    display: grid; /* Grid layout for spacing */
+    gap: 1rem; /* Space between form groups */
 }
 
 /* Form Group Styles */
 .form-group {
+    display: flex; /* Flex layout for column alignment */
+    flex-direction: column;
     margin-bottom: 20px; /* Space between form groups */
-    text-align: left; /* Align labels to the left */
 }
 
 /* Label Styles */
-.form-group label {
+.form-label {
     font-weight: bold; /* Bold label text */
-    color: #444; /* Dark gray color */
-    font-size: 1.1em; /* Slightly larger font for visibility */
+    color: #333; /* Dark gray color */
+    margin-bottom: 0.5rem; /* Space below label */
 }
 
 /* Input and Textarea Styles */
-.form-group input,
-.form-group textarea {
-    width: 100%; /* Full width for consistent layout */
-    padding: 12px; /* Comfortable padding */
-    border: 1px solid #ccc; /* Light gray border */
-    border-radius: 6px; /* Rounded corners for smooth aesthetics */
-    background-color: #fff; /* White background */
-    transition: all 0.3s ease-in-out; /* Smooth transitions */
+.form-input,
+.form-textarea {
+    padding: 0.5rem; /* Padding */
+    border: 1px solid #e5e7eb; /* Soft gray border */
+    border-radius: 0.375rem; /* Rounded corners */
+    font-size: 0.875rem; /* Font size */
+    line-height: 1.25rem; /* Line height */
+    transition: border-color 0.3s ease; /* Smooth transition */
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-    border-color: #4a90e2; /* Blue border on focus */
-    background-color: #f0f8ff; /* Light background on focus */
-    outline: none; /* Remove default outline */
+/* Focus Styles */
+.form-input:focus-visible,
+.form-textarea:focus-visible {
+    outline: 2px solid #2563eb; /* Blue border on focus */
+    outline-offset: 2px;
 }
 
-/* Button Styles */
-.button {
-    background-color: #4a90e2; /* Blue button background */
+/* Textarea Styles */
+.form-textarea {
+    min-height: 120px; /* Minimum height */
+}
+
+/* Submit Button Styles */
+.form-submit {
+    background-color: #0066cc; /* Blue background */
     color: #fff; /* White text */
-    border: none; /* No border */
-    padding: 12px 24px; /* Larger padding */
-    border-radius: 8px; /* Rounded corners */
-    transition: background-color 0.3s ease-in-out; /* Smooth transition */
-    font-size: 1.1em; /* Slightly larger font */
+    padding: 13px 5px; /* Padding */
+    border-radius: 0.375rem; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
     cursor: pointer; /* Pointer cursor for interactivity */
+    width: 100%; /* Full width */
 }
 
-.button:hover {
-    background-color: #357ab7; /* Darker shade on hover */
+/* Hover Effect */
+.form-submit:hover {
+    background-color: #1d20a5; /* Darker blue on hover */
 }
 
-/* Contact Information List Styles */
-.contact-info {
-    list-style-type: none; /* No bullet points */
-    padding: 0; /* No padding */
-    margin: 0; /* No margin */
-    text-align: center; /* Centered content */
-}
-
-.contact-info li {
-    font-size: 1.1em; /* Slightly larger font */
-    line-height: 1.6; /* Increased line spacing */
-    margin-bottom: 10px; /* Space between list items */
-    color: #333; /* Dark gray color */
-}
-
-/* Contact Links */
-.contact-info li a {
-    color: #4a90e2; /* Blue link color */
-    text-decoration: none; /* No underline */
-    transition: color 0.3s ease-in-out; /* Smooth transition */
-}
-
-.contact-info li a:hover {
-    color: #357ab7; /* Darker blue on hover */
-}
-
-/* Responsive Design for Smaller Screens */
-@media (max-width: 768px) {
-    .form-container {
-        padding: 20px; /* Adjusted padding for smaller screens */
-    }
-
-    .form-group input,
-    .form-group textarea {
-        padding: 10px; /* Smaller padding for smaller screens */
-    }
-
-    .button {
-        padding: 10px 20px; /* Adjusted padding for smaller screens */
-    }
-
-    .contact-info {
-        font-size: 1em; /* Adjusted font size for smaller screens */
-    }
-}
-
-
-/* Responsive Design for Smaller Screens */
-@media (max-width: 768px) {
-    .contact {
-        padding: 20px; /* Reduced padding for smaller screens */
-    }
-
-    .contact ul li {
-        font-size: 1em; /* Slightly smaller font for smaller screens */
-        margin-bottom: 8px; /* Less space between items */
-    }
-
-    .button {
-        padding: 8px 16px; /* Reduced padding on smaller screens */
-    }
-}
 
 
 /* Footer Styles */
