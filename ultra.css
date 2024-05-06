@@ -6,8 +6,7 @@ body {
     padding: 0;
 }
 
-
-/* Navbar styles */
+/* Navbar Styles */
 .navbar {
     background-color: #333; /* Dark background */
     padding: 15px; /* Padding for spacing */
@@ -17,7 +16,7 @@ body {
 .navbar .container {
     display: flex; /* Flexbox layout */
     justify-content: space-between; /* Space between elements */
-    align-items: center; /* Align vertically */
+    align-items: center; /* Vertical alignment */
 }
 
 .navbar-logo {
@@ -41,167 +40,340 @@ body {
 .navbar-menu a {
     text-decoration: none; /* No underline */
     color: #fff; /* White text color */
-    transition: color 0.3s; /* Smooth transition */
+    transition: color 0.3s; /* Smooth transition on hover */
 }
 
 .navbar-menu a:hover {
     color: #f0f0f0; /* Lighter color on hover */
 }
 
-/* Header styles */
+/* Header Styles */
+/* Header Styles */
 header {
-    background-color: #ffffff; /* White background */
-    color: #000000; /* Black text */
+    background-color: #fff; /* White background */
     padding: 40px 0; /* Padding for spacing */
+}
+
+.header-layout {
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Align vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+}
+
+/* Header Text */
+header h1 {
+    font-size: 3em; /* Large font for company name */
+    margin: 0; /* No margin */
     text-align: center; /* Centered text */
 }
 
-header h1 {
-    font-size: 3em; /* Large font size */
-    margin: 0; /* No margin */
-}
-
-.subtitle {
-    font-size: 1.5em; /* Large subtitle */
+header .subtitle {
+    font-size: 1.5em; /* Subtitle font size */
     margin-top: 10px; /* Top margin */
+    text-align: center; /* Centered text */
 }
 
-/* Container for consistent layout */
+/* Container for Consistent Layout */
 .container {
-    max-width: 800px; /* Maximum width */
-    margin: 0 auto; /* Centered */
-    padding: 20px; /* Padding */
+    max-width: 1200px; /* Maximum width */
+    margin: 0 auto; /* Centered horizontally */
+    padding: 20px; /* Padding for consistent layout */
+    text-align: center; /* Center text within the container */
 }
 
+.service {
+    max-width: 800px; /* Smaller maximum width */
+    margin: 0 auto; /* Centered horizontally */
+    padding: 20px; /* Padding for consistent layout */
+}
+
+/* Image Alignment */
 .container img {
-    width: 200px; /* Fixed width for images */
+    width: 200px; /* Fixed image width */
+    margin: 0 auto; /* Centered horizontally */
 }
 
-/* Main content styles */
+/* Main Content Styles */
 .main-content {
-    padding: 40px 0; /* Padding for spacing */
+    background-color: #f5f5f5; /* Light background */
+    padding: 60px 20px; /* Padding for breathing room */
     text-align: center; /* Centered text */
     font-size: 25px; /* Larger font size */
 }
 
+/* Heading Styles */
+.main-content h2 {
+    font-size: 2.5em; /* Large font for heading */
+    color: #333; /* Dark gray color */
+    text-transform: uppercase; /* Uppercase text for emphasis */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Centered heading */
+}
+
+/* Paragraph Styles */
+.main-content p {
+    font-size: 1.2em; /* Larger font size */
+    line-height: 1.6; /* Comfortable line spacing */
+    color: #555; /* Medium gray for text */
+    text-align: justify; /* Justified text alignment */
+    padding: 0 20px; /* Horizontal padding */
+}
+
+
+/* Highlight Style */
+.highlight {
+    font-weight: bold; /* Bold for emphasis */
+    color: #0066cc; /* Custom blue for highlight */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 40px 10px; /* Reduced padding for smaller screens */
+    }
+
+    .main-content h2 {
+        font-size: 2em; /* Smaller font size for smaller screens */
+    }
+
+    .main-content p {
+        font-size: 1.1em; /* Slightly smaller font */
+    }
+}
+
+/* Services Section */
 .services {
-    background-color: #e0e0e0; /* Light gray background for contrast */
-    padding: 40px 0; /* Padding top and bottom */
-    text-align: center;
+    background-color: #e0e0e0; /* Light gray background */
+    padding: 40px 20px; /* Padding around the section */
+    text-align: center; /* Centered text */
 }
 
 .services h2 {
-    font-size: 2em; /* Larger font for headings */
-    margin: 0;
-    color: #202022; /* Dark gray for text */
+    font-size: 2em; /* Larger heading font size */
+    color: #202022; /* Dark gray text */
+    padding-bottom: 20px; /* Space below heading */
 }
 
-/* Card styling for the services section */
+/* Card Styles for Services */
 .cards {
-    display: flex;
-    flex-wrap: wrap; /* Allow cards to wrap */
-    justify-content: center; /* Center the cards */
+    display: flex; /* Flexbox layout */
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center; /* Center cards */
     gap: 20px; /* Space between cards */
 }
 
 .card {
-    background-color: #ffffff; /* White card background */
-    border: 1px solid #878787; /* Light gray border */
+    background-color: #fff; /* White card background */
+    border: 1px solid #ccc; /* Light gray border */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    flex: 0 1 300px; /* Minimum width of 300px, adjustable */
-    padding: 20px; /* Padding within the card */
-    text-align: left; /* Align text to the left */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    flex: 0 1 300px; /* Minimum width, adaptable */
+    padding: 20px; /* Padding inside the card */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
 }
 
 .card h3 {
     font-size: 1.5em; /* Larger font for card titles */
-    margin: 0 0 10px 0; /* Space below the heading */
-    color: #000000; /* Teal for card titles */
+    color: #333; /* Dark gray for heading */
+    margin-bottom: 10px; /* Space between title and content */
 }
 
 .card p {
-    font-size: 1em; /* Standard font size for text */
-    line-height: 1.5; /* Increased line height for readability */
-    color: #202022; /* Dark gray for text */
+    font-size: 1em; /* Standard font size */
+    line-height: 1.5; /* Comfortable line spacing */
+    color: #555; /* Medium gray text */
+    margin: 0; /* No extra margin */
 }
 
-/* Hover effects for interactivity */
+/* Hover Effects for Cards */
 .card:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Increase shadow */
+    transform: scale(1.05); /* Slight scaling on hover */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
-/* Service content list styles */
-.service-content ul {
-    list-style-type: disc; /* Disc bullets */
-    padding-left: 40px; /* Indent for list */
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Centered alignment */
+    }
+
+    .card {
+        width: 100%; /* Full width on smaller screens */
+    }
 }
 
-/* Contact section styles */
-.contact {
-    background-color: #cacaca; /* Gray background */
-    padding: 40px 0; /* Padding for spacing */
+/* Contact Section Styles */
+/* Form Container */
+.form-container {
+    background-color: #f7f7f7; /* Light background for contrast */
+    border: 1px solid #e0e0e0; /* Soft gray border */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 30px; /* Generous padding */
+    margin: 30px auto; /* Center the form */
+    max-width: 600px; /* Maximum width for form */
 }
 
-.contact h2 {
-    text-align: center; /* Centered heading */
-    margin-top: 0; /* No top margin */
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 20px; /* Space between form groups */
+    text-align: left; /* Align labels to the left */
 }
 
-.contact ul {
+/* Label Styles */
+.form-group label {
+    font-weight: bold; /* Bold label text */
+    color: #444; /* Dark gray color */
+    font-size: 1.1em; /* Slightly larger font for visibility */
+}
+
+/* Input and Textarea Styles */
+.form-group input,
+.form-group textarea {
+    width: 100%; /* Full width for consistent layout */
+    padding: 12px; /* Comfortable padding */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 6px; /* Rounded corners for smooth aesthetics */
+    background-color: #fff; /* White background */
+    transition: all 0.3s ease-in-out; /* Smooth transitions */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #4a90e2; /* Blue border on focus */
+    background-color: #f0f8ff; /* Light background on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button Styles */
+.button {
+    background-color: #4a90e2; /* Blue button background */
+    color: #fff; /* White text */
+    border: none; /* No border */
+    padding: 12px 24px; /* Larger padding */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition */
+    font-size: 1.1em; /* Slightly larger font */
+    cursor: pointer; /* Pointer cursor for interactivity */
+}
+
+.button:hover {
+    background-color: #357ab7; /* Darker shade on hover */
+}
+
+/* Contact Information List Styles */
+.contact-info {
     list-style-type: none; /* No bullet points */
     padding: 0; /* No padding */
-    text-align: center; /* Centered layout */
+    margin: 0; /* No margin */
+    text-align: center; /* Centered content */
 }
 
-.contact ul li {
+.contact-info li {
     font-size: 1.1em; /* Slightly larger font */
-    line-height: 1.6; /* Line spacing */
-    margin-bottom: 15px; /* Space between list items */
+    line-height: 1.6; /* Increased line spacing */
+    margin-bottom: 10px; /* Space between list items */
+    color: #333; /* Dark gray color */
 }
 
-.contact ul li a {
-    color: #003853; /* Darker link color */
+/* Contact Links */
+.contact-info li a {
+    color: #4a90e2; /* Blue link color */
+    text-decoration: none; /* No underline */
+    transition: color 0.3s ease-in-out; /* Smooth transition */
+}
+
+.contact-info li a:hover {
+    color: #357ab7; /* Darker blue on hover */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px; /* Adjusted padding for smaller screens */
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 10px; /* Smaller padding for smaller screens */
+    }
+
+    .button {
+        padding: 10px 20px; /* Adjusted padding for smaller screens */
+    }
+
+    .contact-info {
+        font-size: 1em; /* Adjusted font size for smaller screens */
+    }
+}
+
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .contact {
+        padding: 20px; /* Reduced padding for smaller screens */
+    }
+
+    .contact ul li {
+        font-size: 1em; /* Slightly smaller font for smaller screens */
+        margin-bottom: 8px; /* Less space between items */
+    }
+
+    .button {
+        padding: 8px 16px; /* Reduced padding on smaller screens */
+    }
+}
+
+
+/* Footer Styles */
+.footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 20px; /* Padding around the footer */
+    text-align: center; /* Centered text alignment */
+}
+
+/* Footer Container */
+.footer .container {
+    max-width: 1200px; /* Maximum width for responsive design */
+    margin: 0 auto; /* Centered */
+}
+
+/* Footer List Styling */
+.footer ul {
+    list-style-type: none; /* No bullet points */
+    padding: 0; /* No padding */
+    margin: 0; /* No margin */
+}
+
+/* Footer List Items */
+.footer ul li {
+    margin-bottom: 10px; /* Space between list items */
+    line-height: 1.5; /* Increased line spacing */
+}
+
+/* Footer Links Styling */
+.footer ul li a {
+    color: #fff; /* White color for links */
     text-decoration: none; /* No underline */
     transition: color 0.3s ease; /* Smooth transition */
 }
 
-.contact ul li a:hover {
-    color: #6795ea; /* Lighter color on hover */
+.footer ul li a:hover {
+    color: #0066cc; /* Blue shade on hover */
 }
 
-/* Container class for consistent layout */
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px; /* Reduced padding for smaller screens */
+    }
 
-.main-content {
-    padding: 60px 20px; /* Extra padding for breathing room */
-    background: linear-gradient(to bottom, #ffffff, #f0f0f0); /* Gradient background */
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    .footer ul li {
+        font-size: 0.9em; /* Slightly smaller font for small screens */
+    }
 }
 
-.container {
-    max-width: 1200px; /* Increased max-width for modern screens */
-    margin: 0 auto;
-    text-align: center;
-}
 
-h2 {
-    font-size: 2.5em; /* Larger font size */
-    color: #333; /* Darker color for headings */
-    text-transform: uppercase; /* Uppercase text for emphasis */
-    margin-bottom: 20px; /* Extra space below heading */
-}
-
-p {
-    font-size: 1.1em; /* Slightly larger font size */
-    line-height: 1.7; /* Increased line height for readability */
-    color: #555; /* A subtle dark shade for text */
-    text-align: justify; /* Justify text for a neat look */
-    padding: 0 20px; /* Extra padding for content spacing */
-}
-
-.highlight {
-    font-weight: bold; /* Bold text for emphasis */
-    color: #0066cc; /* Custom color for highlights */
-}
